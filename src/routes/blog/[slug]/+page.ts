@@ -5,7 +5,7 @@ import type { Component } from 'svelte';
 
 export const load: PageLoad = async ({ params }) => {
 	try {
-		const post = await import(`../../../content/posts/${params.slug}.md`);
+		const post = await import(`../../../content/posts/${params.slug}/index.md`);
 		return {
 			content: post.default as Component,
 			metadata: post.metadata as PostMetadata,

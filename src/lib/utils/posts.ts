@@ -2,13 +2,15 @@ import type { Post, PostMetadata } from '$lib/types/post';
 
 export async function getAllPosts(): Promise<Post[]> {
 	const postFiles = import.meta.glob<{ metadata: PostMetadata }>(
-		'/src/content/posts/*.md',
+		'/src/content/posts/*/index.md',
 		{ eager: true }
 	);
 
 	const posts: Post[] = Object.entries(postFiles)
 		.map(([path, file]) => {
-			const slug = path.split('/').pop()?.replace('.md', '') ?? '';
+			// Extract slug: /src/content/posts/hello-world/index.md -> hello-world
+			const parts = path.split('/');
+			const slug = parts[parts.length - 2];
 			return {
 				metadata: file.metadata,
 				slug

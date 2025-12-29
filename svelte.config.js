@@ -23,6 +23,13 @@ const config = {
 				}
 				throw new Error(message);
 			},
+			handleMissingId: ({ id }) => {
+				// Ignore footnote anchors (populated client-side)
+				if (id.startsWith('footnote-')) {
+					return;
+				}
+				throw new Error(`Missing id: ${id}`);
+			},
 			handleUnseenRoutes: 'ignore'
 		}
 	}

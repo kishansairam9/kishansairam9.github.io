@@ -29,6 +29,7 @@
 
 <style>
 	.post-card {
+		position: relative;
 		padding: var(--space-4) 0;
 		border-bottom: 1px solid var(--color-border);
 	}
@@ -41,6 +42,13 @@
 		text-decoration: none;
 	}
 
+	/* Stretch link to cover entire card */
+	.post-link::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+	}
+
 	.post-title {
 		margin: 0 0 var(--space-2);
 		font-size: 1.5rem;
@@ -48,7 +56,7 @@
 		transition: color var(--transition-fast);
 	}
 
-	.post-link:hover .post-title {
+	.post-card:hover .post-title {
 		color: var(--color-text-secondary);
 	}
 
@@ -64,6 +72,8 @@
 	}
 
 	.post-tags {
+		position: relative;
+		z-index: 1;
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--space-2);
