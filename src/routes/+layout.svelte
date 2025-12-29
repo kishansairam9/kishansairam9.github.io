@@ -10,10 +10,6 @@
 	let isBlogPost = $derived($page.url.pathname.startsWith('/blog/') && $page.url.pathname !== '/blog/');
 </script>
 
-<svelte:head>
-	<link rel="icon" href="/favicon.ico" />
-</svelte:head>
-
 <div class="app">
 	<Header />
 	<main class:blog-post={isBlogPost}>

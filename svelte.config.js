@@ -17,12 +17,7 @@ const config = {
 			strict: true
 		}),
 		prerender: {
-			handleHttpError: ({ path, message }) => {
-				if (path === '/favicon.ico') {
-					return;
-				}
-				throw new Error(message);
-			},
+			handleHttpError: 'fail',
 			handleMissingId: ({ id }) => {
 				// Ignore footnote anchors (populated client-side)
 				if (id.startsWith('footnote-')) {
