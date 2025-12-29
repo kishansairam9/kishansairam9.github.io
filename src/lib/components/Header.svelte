@@ -5,8 +5,7 @@
 
 	const navLinks = [
 		{ href: '/', label: 'Blog' },
-		{ href: '/about/', label: 'About' },
-		{ href: '/resume/', label: 'Resume' }
+		{ href: '/about/', label: 'About' }
 	];
 
 	function isActive(href: string, pathname: string): boolean {

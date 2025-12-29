@@ -1,11 +1,11 @@
 ---
-title: Hello World
-description: Welcome to my blog! This is my first post where I introduce myself and share what I'll be writing about.
+title: Demo Post
+description: Demo Placeholder
 date: '2024-12-29'
 tags:
-  - Personal
-  - Introduction
-published: true
+  - Demo
+  - Tutorial
+published: false
 ---
 
 <script>
