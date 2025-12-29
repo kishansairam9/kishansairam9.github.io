@@ -4,6 +4,8 @@
 	import TagBadge from '$lib/components/TagBadge.svelte';
 	import TableOfContents from '$lib/components/TableOfContents.svelte';
 	import Footnotes from '$lib/components/Footnotes.svelte';
+	import Giscus from '$lib/components/Giscus.svelte';
+	import { giscusConfig } from '$lib/config/giscus';
 	import { imageZoom } from '$lib/actions/imageZoom';
 	import { formatDate } from '$lib/utils/formatDate';
 	import { sidenotes } from '$lib/stores/sidenotes';
@@ -76,6 +78,14 @@
 
 	<!-- Mobile footnotes (shown at end on small screens) -->
 	<Footnotes />
+
+	<!-- Comments -->
+	<Giscus
+		repo={giscusConfig.repo}
+		repoId={giscusConfig.repoId}
+		category={giscusConfig.category}
+		categoryId={giscusConfig.categoryId}
+	/>
 </article>
 
 <style>
