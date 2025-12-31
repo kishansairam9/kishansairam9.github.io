@@ -49,6 +49,6 @@ I've always believed in the power of sharing knowledge<Sidenote id={3}>Studies s
 
 ## Let's Connect
 
-Feel free to reach out on [GitHub](https://github.com/kishansairam9), [LinkedIn](https://linkedin.com/in/kishansairam9), or [Twitter](https://twitter.com/kishan_adapa).
+Feel free to reach out on [GitHub](https://github.com/kishansairam9), [LinkedIn](https://linkedin.com/in/kishansairam9), or [Twitter](https://twitter.com/kishansairam9).
 
 Thanks for reading!

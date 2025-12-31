@@ -7,7 +7,7 @@ export const siteConfig = {
 		email: 'hello@kishanadapa.in',
 		github: 'https://github.com/kishansairam9',
 		linkedin: 'https://linkedin.com/in/kishansairam9',
-		twitter: 'https://twitter.com/kishan_adapa'
+		twitter: 'https://twitter.com/kishansairam9'
 	},
 	defaultImage: '/og-image.png'
 };
